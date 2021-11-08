@@ -1,3 +1,3 @@
 FROM gitpod/workspace-full
-RUN sudo apt-get update  && sudo apt-get install -y   redis-server  && sudo rm -rf /var/lib/apt/lists/*
-RUN rustup default nightly
+RUN sudo apt-get update  && sudo apt-get install -y redis-server  && sudo rm -rf /var/lib/apt/lists/*
+RUN bash -cl "rustup default nightly"
